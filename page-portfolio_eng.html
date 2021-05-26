@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Claire Bisset – my website</title>
+    <link rel="stylesheet" href="style-page-cv.css">
+
+    <script src="//pull.cappuccicons.com/cpf.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo"/>
+            <button onclick="window.location.href = 'index_eng.html';" class="common-btn">Home page</button>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 48.1481%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+                <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEUWK52hoE&#x2F;view?embed">
+                </iframe>
+            </div>
+            <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEUWK52hoE&#x2F;view?utm_content=DAEUWK52hoE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Portfolio</a> par Claire Bisset
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Contact-->
+    <section id="contacts">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Contacts</h1>
+                <span class="square"></span>
+                <h5>Mail</h5>
+                <p>
+                    claire.bisset@outook.com
+                </p>
+                <h5>Phone number</h5>
+                <p>
+                    +33667603702
+                </p>
+            </div>
+            <div class="contact-right-col">
+                <img src="images/contacts.png">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="footer-credits">
+                        <small>This website was created with <i class="cp cp-heart-o"></i> by Claire Bisset    <i class="cp cp-cc-o"></i> </small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="footer-button">
+                        <button onclick="window.location.href = 'page-portfolio.html';" class="common-btn">Français</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--social-icons-->
+
+    <div class="social-icons">
+        <img onclick="window.open(this.href = 'https://www.instagram.com/c_marhiel/');" src="images/instagram.png">
+        <img onclick="window.open(this.href = 'https://www.linkedin.com/in/claire-bisset-b00715201'); "src="images/linkedin.png">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+            var scroll = new SmoothScroll('a[href*="#"]',{
+                speed: 1000,
+                speedAsDuration: true
+            });
+
+    </script>
+</body>
+</html>

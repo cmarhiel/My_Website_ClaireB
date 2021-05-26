@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Claire Bisset – mon site</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="//pull.cappuccicons.com/cpf.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo"/>
+            <div class="header-text">
+                <h1>Étudiante en <br>conception de ressources numériques<br> et ingénierie pédagogique</h1>
+                <span class="square"></span>
+                <p>
+                    Actuellement à la recherche d'une alternance pour la seconde année de mon master, je vous propose d'en
+                    apprendre un peu plus sur moi au travers de ce site web.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">Accueil</a></li>
+            <li><a href="#about">En ce moment</a></li>
+            <li><a href="#features">Logiciels</a></li>
+            <li><a href="#courses">Projets & créations</a></li>
+            <li><a href="#offer">À propos de moi</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+    <!--About : en ce moment  -->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>En ce moment</h1>
+                <span class="square"></span>
+                <p>
+                    Je suis actuellement en stage jusqu'à mi-juillet dans une entreprise de formation. Assignée à la filière
+                    Génie Thermique, je participe au diagnostic des ressources existantes ainsi qu'à la conception de nouvelles
+                    ressources numériques.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Features : Logiciels -->
+
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="images/pic-1.png">
+                <h4>Tutoriels & Diaporamas</h4>
+                <p>Storyline, Power point, Google Slides</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/pic-2.png">
+                <h4>Capsules vidéos</h4>
+                <p>Camtasia, Adobe Spark</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/pic-3.png">
+                <h4>Mise en page & bureautique</h4>
+                <p>Suite Office, Canva</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <button onclick="window.location.href = 'page-cv.html';" class="common-btn">Voir le CV</button>
+        </div>
+    </section>
+
+<!--courses : Projets et créations--->
+
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Mes projets &<br>créations</h1>
+                    <span class="square"></span>
+                    <p>
+                      Vous pourrez ici avoir accès aux projets que j'ai réalisé au cours de l'année dans le cadre de mes études
+                        ou bien de façon plus personnelle.
+                    </p>
+                    <button onclick="window.location.href = 'page-portfolio.html';" class="common-btn">Voir le Portfolio</button>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="images/courses.png">
+            </div>
+        </div>
+    </section>
+
+    <!---offer : à propos de moi--->
+    <section id="offer">
+        <div class="about-left-col">
+            <img src="images/offer.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>À propos de moi</h1>
+                <span class="square"></span>
+                <p>
+                    C'est ici que vous pourrez en apprendre un peu plus sur moi !
+                </p>
+                <button onclick="window.location.href = 'page-anecdotes.html';" class="common-btn">En savoir plus</button>
+            </div>
+        </div>
+    </section>
+
+<!--Contact-->
+    <section id="contacts">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Contacts</h1>
+                <span class="square"></span>
+               <h5>E-mail</h5>
+                <p>
+                    claire.bisset@outook.com
+                </p>
+                <h5>Téléphone</h5>
+                <p>
+                    06.67.60.37.02
+                </p>
+            </div>
+            <div class="contact-right-col">
+                <img src="images/contacts.png">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="footer-credits">
+                        <small>Ce site a été créé avec <i class="cp cp-heart-o"></i> par Claire Bisset    <i class="cp cp-cc-o"></i> </small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="footer-button">
+                        <button onclick="window.location.href = 'index_eng.html';" class="common-btn">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--social-icons-->
+
+    <div class="social-icons">
+        <img onclick="window.open(this.href = 'https://www.instagram.com/c_marhiel/');" src="images/instagram.png">
+        <img onclick="window.open(this.href = 'https://www.linkedin.com/in/claire-bisset-b00715201'); "src="images/linkedin.png">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+            var scroll = new SmoothScroll('a[href*="#"]',{
+                speed: 1000,
+                speedAsDuration: true
+            });
+
+    </script>
+</body>
+</html>

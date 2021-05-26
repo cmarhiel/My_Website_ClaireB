@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Claire Bisset – my website</title>
+    <link rel="stylesheet" href="style-page-anecdotes.css">
+
+    <script src="//pull.cappuccicons.com/cpf.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#about">Who I am</a></li>
+            <li><a href="#courses">Time off</a></li>
+            <li><a href="#offer">Hobbies</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+    <!--A propos  -->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/anecdotes.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>A little bit more about me</h1>
+                <span class="square"></span>
+                <p>
+                   My name is Claire Bisset, I'm 25 years old and I come from Haute-Savoie. I moved to Toulouse in
+                    August 2020 to pursue my studies and I'm very happy about it. <br><br>Always ready to learn something
+                    new, my range of interests can be very wide : from astrology to biology, history, mythology and even
+                    more but the few ones that you can find below are the one that I practice more regularly !
+                </p>
+                <span class="square"></span>
+               <br><br>
+                <button onclick="window.location.href = 'index_eng.html';" class="common-btn">Home page</button>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--courses--->
+
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Time off</h1>
+                    <span class="square"></span>
+                    <p>
+                        Being quite calm, my idea of a perfect evening is closer to a good book and some music than a white
+                        night in the city even if I do enjoy going out with friends or family from time to time. <br><br>When
+                        I have a little bit of spare time, I like to write a little bit on my own or with some friends.
+                    </p>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="images/musique-écriture.png">
+            </div>
+        </div>
+    </section>
+
+    <!---offer--->
+    <section id="offer">
+        <div class="about-left-col">
+            <img src="images/jardinage-arts.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Hobbies</h1>
+                <span class="square"></span>
+                <p>
+                   During my spare time I like to take care of my plants and create all kind of things with what I can
+                    find around me. <br><br>Home improvement and DIYs became a hobby by necessity through the years and
+                    pieces of furnitures to assemble !
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+<!--Contact-->
+    <section id="contacts">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Contacts</h1>
+                <span class="square"></span>
+               <h5>Mail</h5>
+                <p>
+                    claire.bisset@outook.com
+                </p>
+                <h5>Phone number</h5>
+                <p>
+                    +33667603702
+                </p>
+            </div>
+            <div class="contact-right-col">
+                <img src="images/contacts.png">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="footer-credits">
+                        <small>This website was created with <i class="cp cp-heart-o"></i> by Claire Bisset    <i class="cp cp-cc-o"></i> </small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="footer-button">
+                        <button onclick="window.location.href = 'page-anecdotes.html';" class="common-btn">Français</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--social-icons-->
+
+    <div class="social-icons">
+        <img onclick="window.open(this.href = 'https://www.instagram.com/c_marhiel/');" src="images/instagram.png">
+        <img onclick="window.open(this.href = 'https://www.linkedin.com/in/claire-bisset-b00715201'); "src="images/linkedin.png">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+            var scroll = new SmoothScroll('a[href*="#"]',{
+                speed: 1000,
+                speedAsDuration: true
+            });
+
+    </script>
+</body>
+</html>
